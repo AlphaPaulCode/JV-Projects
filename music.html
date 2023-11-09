@@ -1,42 +1,38 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            Music Player
-        </title>
-        <link rel="stylesheet" href="music.css">
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    </head>
-    <body>
-        <div class="container">
-            <div class="musicPlayer">
-
-                <nav>
-                 <div class="circle">
+<head>
+    <title>Music Player</title>
+    <link rel="stylesheet" href="music.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="musicPlayer">
+            <nav>
+                <div class="circle" onclick="playPreviousSong()">
                     <i class="fas fa-angle-left"></i>
-                 </div>
-                 <div class="circle">
-                    <i class="fas fa-bars"></i>
-                 </div>
-                </nav>
-                <img src="music.jpg" class="songImg">
-                <h1>Pearl</h1>
-                <p>BurnaBoy</p>
-
-                <audio controls id="song">
-                    <source src="11 Ruger - BoyToy.mp3" type="audio/mp3">
-                </audio>
-                <input type="range" value="0" id="progress">
-
-                <div class="controls">
-                    <div><i class="fas fa-backward"></i></div>
-                    <div><i class="fas fa-play" id="ctrlIcon"></i></div>
-                    <div><i class="fas fa-forward"></i></div>
-
                 </div>
+                <div class="circle">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="circle" onclick="playNextSong()">
+                    <i class="fas fa-angle-right"></i>
+                </div>
+            </nav>
+            <img src="music.jpg" class="songImg">
+            <h1 id="songTitle">Pearl</h1>
+            <p id="songArtist">Burna Boy</p>
+            <audio controls id="song" onended="playNextSong()">
+                <source src="11 Ruger - BoyToy.mp3" type="audio/mp3">
+            </audio>
+            <input type="range" value="0" id="progress">
+            <div class="controls">
+                <div onclick="playPreviousSong()"><i class="fas fa-backward"></i></div>
+                <div onclick="playPause()"><i class="fas fa-play" id="ctrlIcon"></i></div>
+                <div onclick="playNextSong()"><i class="fas fa-forward"></i></div>
             </div>
         </div>
-        
-        <script src="music.js"></script>
-    </body>
+    </div>
+    <script src="music.js"></script>
+</body>
 </html>
