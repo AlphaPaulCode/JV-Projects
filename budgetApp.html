@@ -9,9 +9,41 @@
     </head>
     
     <body>
-        <div class="">
+        <div class="budetContainer">
+            <div class="appTitle">
+                <a href="">Code <b>Explained</b></a>
+            </div>
+      <div class="budgetHeader">
+      </div>      
+      <div class="budgetDashboard">
+        <div class="dashTitle">Dashboard</div>
+        <div class="toggle">
+            <div class="tab1">Expenses</div>
+            <div class="tab2">Income</div>
+            <div class="tab3 active">All</div>
+        </div>
+        <div class="hide" id="income">
+            <ul class="list"></ul>
+            <div class="input">
+                <input type="text" id="incomeTitleInput" name="title" placeholder="Title">
+                <input type="number" id="incomeAmountInput" name="amount" placeholder="$0">
+                <div class="addIncome"><i class="fas fa-plus"></i></div>
+            </div> 
 
         </div>
+        <div class="hide" id="expense">
+            <ul class="list"></ul>
+<div class="input">
+    <input type="text" id="expenseTitleIput" name="title" placeholder="title">
+    <input type="number" id="expenseAmountIput" name="amount" placeholder="$0">
+    <div class="addExpenses"><i class="fas fa-plus"></i></div>
+</div>
+        </div>
+
+        <div id="all"></div>
+      </div>
+        </div>
         <script src="budgetApp.js"></script>
+        <script src="chart.js"></script>
     </body>
 </html>
