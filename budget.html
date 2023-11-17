@@ -11,17 +11,48 @@
         <div class="wrapper">
             <div class="container">
                 <div class="subContainer">
+
+                    <!--------------Budget----->
                     <div class="totalAmountContainer">
                         <h3>Budget</h3>
                <p class="hide error" id="budgetError">Value cannot be empty or Negative</p>
                <input type="number" id="totalAmount" placeholder="Enter Total Amount">
             <button class="submit" id="totalAmountButton">Set Budget</button>        
             </div>
+<!---------------------Expendiure---------->
+        <div class="userAmountContainer">
+            <p class="hide error" id="productTitleError">
+                Values cannot be empty
+            </p>
+            <input type="text" class="productTitle" id="productTitle" placeholder="Enter Title of Product">
+        <input type="number" id="userAmount" placeholder="Enter Cost of Product">
+        <button class="submit" id="checkAmount">Check Amount</button>
+        </div>
+                </div>
+               <!--------Output------>
+               <div class="outputContainer flexSpace">
+                <div>
+                    <p>Total Budget</p>
+                    <span id="amount">0</span>
+                </div>
+                <div>
+                    <p>Expenses</p>
+                    <span id="expenditureValue">0</span>
+                </div>
+                <div>
+                    <p>Balance</p>
+                    <span id="balanceAmount">0</span>
+                </div>
+               </div> 
+            </div>
 
+            <!--------List------->
+            <div class="list">
+                <h3>Expense List</h3>
+                <div class="listContainer" id="list">
                 </div>
 
             </div>
-
         </div>
         <script src="budget.js"></script>
     </body>

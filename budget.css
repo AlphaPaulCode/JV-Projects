@@ -7,3 +7,75 @@
 body{
     background: #f7f9fd;
 }
+.wrapper{
+    width: 90%;
+    font-size: 16px;
+    max-width: 43.75rem;
+    margin: 1em auto;
+}
+.subContainer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3em;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.flexSpace{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapper h3{
+    color: #363d55;
+    font-weight: 500;
+    margin-bottom: 0.6em;
+}
+.container input{
+     display: block;
+     width: 100%;
+     padding: 0.6em 0.3em;
+     border: 1px solid #d0d0d0;
+     border-radius: 0.3em;
+     color: #414a67;
+     outline: none;
+     font-family: 400;
+}
+.container input:focus{
+    border-color: #587ef4;
+}
+.totalAmountContainer, .userAmountContainer{
+    background: #ffffff;
+    padding: 1.25em 0.9em;
+    border-radius: 0.3em;
+     box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.06);
+}
+.outputContainer{
+    background: #587ef4;
+    color: #ffffff;
+    border-radius: 0 0.6em 1.2em rgba(28, 0, 80, 0.06);
+    margin: 2em 0;
+    padding: 1.2em;
+}
+.outputContainer p{
+    font-weight: 500;
+    margin-bottom: 0.6em;
+}
+.outputContainer span{
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    color: #e5e5e5;
+}
+.submit{
+    font-size: 1em;
+    margin-top: 1em;
+    background: #587ef4;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding: 0.6em 1.2em;
+    cursor: pointer;
+}
